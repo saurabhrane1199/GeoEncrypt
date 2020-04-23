@@ -1,4 +1,4 @@
-package com.encrypto.android.geoencrypt.viewModels;
+package com.encrypto.android.geoencrypt.ui.auth;
 
 import android.app.Application;
 

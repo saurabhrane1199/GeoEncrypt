@@ -1,4 +1,4 @@
-package com.encrypto.android.geoencrypt;
+package com.encrypto.android.geoencrypt.ui.auth;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
@@ -8,12 +8,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
-import com.encrypto.android.geoencrypt.viewModels.AuthViewModel;
+import com.encrypto.android.geoencrypt.MainActivity;
+import com.encrypto.android.geoencrypt.NavigationDrawer;
+import com.encrypto.android.geoencrypt.R;
 import com.encrypto.android.geoencrypt.models.User;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -24,7 +24,6 @@ import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
 public class AuthActivity extends AppCompatActivity {
@@ -39,10 +38,10 @@ public class AuthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
         context = getApplicationContext();
-        checkAndGetCurrentUser();
         initSignInButton();
         initAuthViewModel();
         initGoogleSignInClient();
+        checkAndGetCurrentUser();
     }
 
     private void checkAndGetCurrentUser(){
@@ -131,7 +130,7 @@ public class AuthActivity extends AppCompatActivity {
 
 
     private void goToMainActivity(User user) {
-        Intent intent = new Intent(AuthActivity.this, MainActivity.class);
+        Intent intent = new Intent(AuthActivity.this, NavigationDrawer.class);
         intent.putExtra("USER", user);
         startActivity(intent);
         finish();
