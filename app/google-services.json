@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "544322402208",
+    "firebase_url": "https://geoencrypt-93025.firebaseio.com",
+    "project_id": "geoencrypt-93025",
+    "storage_bucket": "geoencrypt-93025.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544322402208:android:ef500097ad070db8cc16c5",
+        "android_client_info": {
+          "package_name": "com.encrypto.android.geoencrypt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544322402208-nki192sjuav59cchio9rbjt1ortlmseb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.encrypto.android.geoencrypt",
+            "certificate_hash": "e603aa586d4d43140b9ae1845768e0095cef3dbc"
+          }
+        },
+        {
+          "client_id": "544322402208-2krn3sfbvgfjtfpkdo90tufb9apb23gc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHnGMnXorAz1XvI67Oxdw2WYTU8i_MhoE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544322402208-2krn3sfbvgfjtfpkdo90tufb9apb23gc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

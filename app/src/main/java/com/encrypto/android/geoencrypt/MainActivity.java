@@ -72,8 +72,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         addFiles = findViewById(R.id.encryptFiles);
         viewFiles = findViewById(R.id.vexst);
-        final Intent i2 = new Intent(getApplicationContext(), FileChooser.class);
-        final Intent i3 = new Intent(getApplicationContext(), FileChooser.class);
         addFiles.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void selectFileToEncrypt(){
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-        intent.setType("text/*");
+        intent.setType("*/*");
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         // Only the system receives the ACTION_OPEN_DOCUMENT, so no need to test.
         startActivityForResult(intent, PICK_FILE_REQUEST);

@@ -47,7 +47,7 @@ public class geoCryptology {
 
         InputStream inputStream = context.getContentResolver().openInputStream(inFilePath);
         File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-        File myFile = new File(folder, "trail2.des");
+        File myFile = new File(folder, "trail3.des");
         FileOutputStream outFile = new FileOutputStream(myFile);
 
         String password = "javapapers";
@@ -110,7 +110,7 @@ public class geoCryptology {
     public static void decryptFile(Uri file,Context context) throws IOException, NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeySpecException, InvalidAlgorithmParameterException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
         InputStream fis = context.getContentResolver().openInputStream(file);
         File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-        File myFile = new File(folder, "plainfile_decrypted.txt");
+        File myFile = new File(folder, "plainfile_decrypted.pdf");
         FileOutputStream fos = new FileOutputStream(myFile);
 
         String password = "javapapers";
